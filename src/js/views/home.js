@@ -1,8 +1,10 @@
-import "../components/counter.js";
+import "../components/usersList.js";
 
 export default () => /*html*/`
-    <h1>Home</h1>
-    <p>Simple click counter</p>
-    <click-counter></click-counter>
-    <p>Dont forget the Bootstrap framework !</p>
+    <div class="container">
+        <h1>Home</h1>
+        <div class="row">
+            <users-list></users-list>
+        </div>
+    </div>
 `;
