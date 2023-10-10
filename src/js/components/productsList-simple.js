@@ -4,13 +4,9 @@ class ProductsList extends HTMLElement {
     constructor() {
         super();            // Always call super first in constructor to access functions of the parent Object
         
-        async function getProducts() {
-            let response = await fetch('https://dummyjson.com/products?limit=10');
-            let data = await response.json();
-            return data;
-        }
-
-        getProducts().then(data => {
+        fetch('https://dummyjson.com/products?limit=10') // récupérer la data
+        .then(response => response.json())                                      // convertir la data en json
+        .then(data => {  
             let products = data.products;
             let htmlToDisplay = '';
             products.forEach(product => {
@@ -23,10 +19,7 @@ class ProductsList extends HTMLElement {
                 `;
             });
             this.innerHTML = htmlToDisplay;
-        });
-        
-
-        
+        })                                                   // utiliser la data
     }
 }
 customElements.define("products-list", ProductsList);
