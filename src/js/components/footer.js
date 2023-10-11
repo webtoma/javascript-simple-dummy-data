@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
         <footer>    
             <div class="container">
-                footer
+                footer 2023
             </div>
         </footer>`;
     }
