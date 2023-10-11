@@ -16,7 +16,7 @@ class UsersList extends HTMLElement {
                     <div class="col-md-2 mb-3">
                         <div class="card p-1 text-center">
                             <img src="${user.image}" alt="${user.firstName}" class="border-bottom border" style="height:100px">
-                            <h5>${user.firstName}<br>${user.lastName}</h5>
+                            <h5><a href="posts/user/${user.id}" data-link>${user.firstName}<br>${user.lastName}</a></h5>
                             <p><small>${user.address.city}</small></p>
                         </div>
                     </div>
@@ -25,9 +25,6 @@ class UsersList extends HTMLElement {
             htmlToDisplay += '</div>';
             this.innerHTML = htmlToDisplay;
         });
-        
-
-        
     }
 }
 customElements.define("users-list", UsersList);

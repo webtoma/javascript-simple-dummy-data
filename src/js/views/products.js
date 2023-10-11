@@ -2,6 +2,6 @@ import "../components/productsList.js";
 
 export default () => /*html*/`
     <div class="container">
-        <products-list></products-list>
+        <products-list class="row"></products-list>
     </div>
 `;

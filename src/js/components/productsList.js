@@ -12,11 +12,11 @@ class ProductsList extends HTMLElement {
 
         getProducts().then(data => {
             let products = data.products;
-            let htmlToDisplay = '<div class="row">';
+            let htmlToDisplay = '';
             products.forEach(product => {
                 htmlToDisplay += `
-                    <div class="col-md-4">
-                        <div class="card">
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-2">
                             <img src="${product.images[0]}" alt="${product.title}">
                             <h3>${product.title}</h3>
                             <p>${product.description}</p>
@@ -24,7 +24,6 @@ class ProductsList extends HTMLElement {
                     </div>
                 `;
             });
-            htmlToDisplay += '</div>';
             this.innerHTML = htmlToDisplay;
         });
         
