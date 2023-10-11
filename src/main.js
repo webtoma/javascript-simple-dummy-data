@@ -35,7 +35,6 @@ function router() {
             router();
         }
     }
-    
 };
 
 // Handle navigation
