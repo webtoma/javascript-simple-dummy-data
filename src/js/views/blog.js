@@ -1,4 +1,6 @@
+import "../components/postsList.js";
+
+
 export default () => /*html*/`
-    <h1>Blog</h1>
-    <p>Lets load articles from DummyJSON</p>
+   <card-post></card-post>
 `;
