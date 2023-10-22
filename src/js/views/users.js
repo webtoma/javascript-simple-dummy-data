@@ -1,3 +1,11 @@
+
+import "../components/usersList.js";
+
+
+export default () => /*html*/`
+   <card-users></card-users>
+`;
+
 import '../components/header.js';
 import '../components/footer.js';
 
@@ -13,3 +21,4 @@ export default () => /*html*/`
     </div>
     <custom-footer></custom-footer>
 `;
+

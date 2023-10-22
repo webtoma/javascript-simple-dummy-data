@@ -1,3 +1,8 @@
+import "../components/postsList.js";
+
+export default () => /*html*/`
+   <card-post></card-post>
+`;
 import '../components/header.js';
 import '../components/footer.js';
 import '../components/postsList.js';
@@ -9,3 +14,4 @@ export default () => /*html*/`
     </div>
     <custom-footer></custom-footer>
 `;
+
